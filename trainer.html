@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./CSS/trainer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" ; />
+  <link rel="shortcut icon" href="./media/favicon/1.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/export_navbar&footerA.css">
+
+
+
+  <title>Trainers</title>
+</head>
+
+<body>
+  <div id="blackblur"></div>
+  <!-- signin popup -->
+  <section id="signin_form" class="notdisplay">
+    <button id="cancel_signin"><span>X</span></button>
+    <p id="signin_header">Sign In</p>
+    <form>
+      <input type="email" placeholder="E-mail" id="signin_email">
+      <p id="instuctions_email" class="notdisplay">Ex</p>
+      <input type="password" placeholder="Password" id="signin_pass">
+      <p id="instuctions_email" class="notdisplay">Ex</p>
+
+      <div id="frgt_pass">
+        <p class="col-blue underline">Forgot Password</p>
+      </div>
+
+      <button id="signIn_bt" type="submit">Sign In</button>
+
+      <p class="col-grey">-Or-</p>
+
+      <button><b style="font-size: 18px">f</b> |Sign In With Facebook</button>
+
+      <p>Not a Xtreme Fitness user?
+        <span class="col-blue" onclick="register">Register</apan>
+      </p>
+
+    </form>
+  </section>
+
+
+
+  <div id="trainer_navbar"></div>
+  <div id="trainer_page">
+    <!-- trainer header -->
+    <div id="trainer_header">
+      <div class="trainer_container">
+        <h1>Online personal trainer</h1>
+      </div>
+    </div>
+
+    <!-- mid section -->
+    <div class="trainer_container">
+      <!-- small header intro -->
+      <div id="trainer_headerDescription">
+        <p class="trainer_text">
+          Xtreme Fitness has certified personal trainers that provide you with
+          customised workout plans depending on your goals. Our trainers track
+          your progress, coach and motivate you daily through our web and
+          smartphone app.
+        </p>
+      </div>
+      <hr />
+      <!-- trainers -->
+      <div id="trainer_list">
+        <h2 id="trainer_list_header">Our trainers</h2>
+        <!-- Trainer 1 -->
+        <div class="trainer_list_row">
+          <div class="list_row_col1">
+            <div class="trainer_img_container">
+              <img class="trainer_img"
+                src="https://images.everyeye.it/img-notizie/wwe-the-rock-pronto-tornare-ring-dettagli-v3-531139.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list_row_col2">
+            <h3>Dwayne Johnson</h3>
+            <p class="trainer_text">
+              Dwayne is a university-trained practising physiotherapist,
+              personal trainer and a world-class bodybuilder. He’s a strong
+              believer in what doesn’t challenge you, won’t change you. Thus,
+              you should expect to be challenged if you work with him. Siim
+              has extensive experience, from working with people with special
+              needs to training elite athletes from freestyle skiing to
+              bodybuilding and bikini fitness. His speciality is physical
+              conditioning along with strength and hypertrophy programs.
+            </p>
+            <a class="trainer_btn trainer_btn_wh trainer_btn_clr" href="./index.html">Choose this trainer</a>
+          </div>
+        </div>
+        <!-- Trainer 2 -->
+        <div class="trainer_list_row">
+          <div class="list_row_col1">
+            <div class="trainer_img_container">
+              <img class="trainer_img"
+                src="https://img.freepik.com/premium-photo/young-female-fitness-personal-trainer-with-notepad-standing-gym-with-thumb-up_146671-31563.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list_row_col2">
+            <h3>Emily Carter</h3>
+            <p class="trainer_text">
+              Emily Carter is a university-trained physiotherapist and experienced personal trainer with a decade of experience 
+              in the fitness industry. She firmly believes that growth comes from stepping out of your comfort zone,
+             and her training sessions reflect this philosophy. Emily is passionate about helping clients reach 
+             their full potential, whether they're recovering from an injury or aiming for peak athletic performance.
+            </p>
+            <a class="trainer_btn trainer_btn_wh trainer_btn_clr" href="#sigup_and_login">Choose this trainer</a>
+          </div>
+        </div>
+      </div>
+      <!-- Trainer 3 -->
+      <div class="trainer_list_row">
+        <div class="list_row_col1">
+          <div class="trainer_img_container">
+            <img class="trainer_img"
+              src="https://cdn.exercise.com/images/4150/ios_large.png"  alt=""/>
+          </div>
+        </div>
+        <div class="list_row_col2">
+          <h3>John Cena</h3>
+          <p class="trainer_text">
+            John Cena is a dedicated personal trainer with over a decade of experience in the fitness industry. He specializes 
+            in deadlift technique and strength training, and his philosophy is that strength is the foundation of all physical achievements. 
+            John is committed to helping clients maximize their potential through personalized training programs that focus on form, safety, and progression.
+          </p>
+          <a class="trainer_btn trainer_btn_wh trainer_btn_clr" href="#sigup_and_login">Choose this trainer</a>
+        </div>
+      </div>
+    </div>
+    <!-- Trainer 4 -->
+    <div class="trainer_list_row">
+      <div class="list_row_col1">
+        <div class="trainer_img_container">
+          <img class="trainer_img"
+            src="https://img.freepik.com/free-photo/zenlike-female-athlete-with-hands-clasped-meditating-living-room_637285-6234.jpg?size=626&ext=jpg"  alt=""  />
+        </div>
+      </div>
+      <div class="list_row_col2">
+        <h3>Anjali Sharma</h3>
+        <p class="trainer_text">
+          Anjali Sharma is an enthusiastic and versatile trainer with over 8 years of experience in Yoga
+          and Zumba. She believes that fitness should be a balance of energy and tranquility, and her classes 
+          reflect this philosophy. Anjali’s yoga sessions focus on flexibility, mindfulness, and relaxation, while her Zumba classes are high-energy 
+          and full of fun, with infectious beats that keep everyone moving. <br>
+          Her unique blend of yoga and Zumba provides a holistic approach to fitness, catering to both the body and the mind. Anjali's teaching style 
+          is inclusive and welcoming, making sure that everyone feels at ease, regardless of their experience level.
+        </p>
+        <a class="trainer_btn trainer_btn_wh trainer_btn_clr" href="#sigup_and_login">Choose this trainer</a>
+      </div>
+    </div>
+  </div>
+      <div id="trainer_steps">
+        <h2>How does it work?</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td class="trainer_steps_num">1</td>
+              <td class="trainer_steps_text">
+                Sign up to <span class="trainer_steps_gymwolf">Xtreme Fitness</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="trainer_steps_num">2</td>
+              <td class="trainer_steps_text">
+                Choose the personal trainer that fits you the best and make
+                the purchase.
+              </td>
+            </tr>
+            <tr>
+              <td class="trainer_steps_num">3</td>
+              <td class="trainer_steps_text">
+                After the purchase your personal trainer will contact you
+                through <span class="trainer_steps_gymwolf">Xtreme Fitness</span> .
+                Describe your goals and your trainer will then make you a
+                customized workout plan.
+              </td>
+            </tr>
+            <tr>
+              <td class="trainer_steps_num">4</td>
+              <td class="trainer_steps_text">
+                Achieve your goals by following the workout plan and tracking
+                workouts in
+                <span class="trainer_steps_gymwolf">Xtreme Fitness</span> . Personal
+                trainer will keep an eye on your workouts, also giving
+                feedback and motivation.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  <!-- bottom  -->
+  
+  </div>
+  <footer>
+    <div class="footerv">
+
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+
+<script src="./scripts/sign_register.js" type="module">
+
+</script>

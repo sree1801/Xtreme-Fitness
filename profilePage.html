@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile info.</title>
+    <link rel="stylesheet" href="./CSS/profilePage.css">
+    <link rel="stylesheet" href="./CSS/export_navbar&footerA.css">
+    <link rel="stylesheet" href="./CSS/export_navbarB.css">
+    <link rel="stylesheet" href="./CSS/ram.css">
+    <link rel="shortcut icon" href="./media/favicon/1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/pop.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="container">
+
+    </header>
+    <section>
+        <div id="body-container">
+            <div class="upper-body">
+                <div class="upper-body-data focus" id="general" tabindex="1">General</div>
+                <div class="upper-body-data" id="Body_measurements" tabindex="1">Body measurements</div>
+            </div>
+            <div id="general-container">
+                <div id="general-name">
+                    <h2>General</h2>
+                    <p>Delete profile</p>
+                </div>
+                <div>
+                    <form>
+                        <label for="name1">Your name:</label>
+                        <input id="name1" class="input-box" type="text"><br>
+
+                        <div class="form-group">
+                            <label id="gender" for="gender-option" class=control-label>Gender:</label>
+                            <!-- <div class="genders"> -->
+                            <label id="gender-option" for="gender_male" class="radio">
+                                <input id="gender_male" type="radio" name="gender" value="male">
+                                Male
+                            </label><br>
+
+                            <label id="gender-option" for="gender_female" class="radio">
+                                <input id="gender_female" type="radio" name="gender" value="female">
+                                Female
+                            </label>
+                            <!-- </div> -->
+
+                        </div><br>
+
+                        <label class="b-day" for="b-day b-month">Birth date:</label>
+                        <select class="input-box" name="birth-data" id="b-month" class="birth-data">
+                            <option>-Month-</option>
+                        </select>
+                        <select class="input-box" name="birth-data" id="b-day" class="birth-data">
+                            <option>-Day-</option>
+                        </select>
+                        <select class="input-box" name="birth-data" id="b-year" class="birth-data">
+                            <option>-Year-</option>
+                        </select><br>
+
+                        <label for="password1">Password: </label>
+                        <input class="input-box" id="password1" type="password"><br>
+                        <label for="password2">Confirmed Password: </label>
+                        <input class="input-box" id="password2" type="password"><br>
+
+
+                        <label for="units">Preferred units:</label>
+                        <select class="input-box" name="units" id="units">
+                            <option> Metric(kgs)</option>
+                            <option> Imperial (lbs)</option>
+                        </select>
+                        <br>
+                </div>
+
+            </div>
+
+            <div class="not-display" id="Body_measurements-container">
+                <h2>Body measurements</h2>
+                <div class="height-input">
+                    <label for="height1 height2">Height:</label>
+                    <input class="input-box BM-input BM-height" type="number" id="height1"><span
+                        class="input-box units">m</span>
+                    <input class="input-box BM-input BM-height" type="number" id="height2"><span
+                        class="input-box units">cm</span>
+                </div><br>
+                <label for="Waist">Waist:</label>
+                <input class="input-box BM-input" type="number" id="Waist"><span class="input-box units">cm</span>
+                <br>
+                <label for="Hips">Hips:</label>
+                <input class="input-box BM-input" type="number" id="Hips"><span class="input-box units">cm</span>
+                <br>
+                <label for="Neck">Neck:</label>
+                <input class="input-box BM-input" type="number" id="Neck"><span class="input-box units">cm</span>
+                <br>
+            </div>
+
+            <div class="save-button ">
+                <button type="submit" class="save" onclick="alerts()">Save</button>
+            </div>
+        </div>
+
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerv">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="./scripts/profiePage.js"></script>
+
+<script type="module">
+    let footer1 = document.querySelector(".footerv")
+    import { navbar, footer } from "./scripts/Export_navbar&footerA.js"
+
+    footer1.innerHTML = footer()
+
+</script>
+
+<!-- <script type="module">
+    let navbar1 = document.querySelector("#container")
+    import navbar from "../Umer_Ahmad_fw20_0026/JS/nav.js"
+    navbar1.innerHTML = navbar()
+</script> -->
+<script src="./Scripts/profilePage2.js"></script>
+<script type="module" src="./scripts/ram.js"></script>
